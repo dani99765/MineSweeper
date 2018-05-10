@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <CheckBoxPreference
+        android:key="option1"
+        android:title="Display remaining bombs" />
+    <CheckBoxPreference
+        android:key="option2"
+        android:title="Enable sound" />
+        <ListPreference
+            android:dialogTitle="Select the size of your minesweeper"
+            android:entries="@array/sizes"
+            android:entryValues="@array/sizesValue"
+            android:key="option3"
+            android:title="Select the size of your minesweeper" />
+        <ListPreference
+            android:dialogTitle="Select difficulty"
+            android:entries="@array/difficulties"
+            android:entryValues="@array/difficultiesValue"
+            android:key="option4"
+            android:title="Select the difficulty of your minesweeper" />
+    <EditTextPreference
+        android:dialogTitle="Your Email adress"
+        android:key="option5"
+        android:title="Your Email adress" />
+</PreferenceScreen>
